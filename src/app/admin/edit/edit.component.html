@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="col-sm-6 offset-md-3">
+    <legend>update WashPack</legend>
+    <form>
+        
+            
+        <div class="mb-3">
+          <label for="txtname" class="form-label">name</label>
+          <input type="text" class="form-control" id="txtname" name="name" 
+          [(ngModel)]="addWashPack.name"/>
+          
+        </div>
+        <div class="mb-3">
+            <label for="txtCost" class="form-label">cost</label>
+            <input type="number" class="form-control" id="txtcost" name="cost" 
+            [(ngModel)]="addWashPack.cost"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="txtdescription" class="form-label">description</label>
+            <textarea rows="5" cols="60" class="form-control" id="txtdescription" name="description"
+            [(ngModel)]="addWashPack.description"
+            >
+            </textarea>
+          </div>
+          
+        <button type="submit" (click)="update()" class="btn btn-primary">Update</button>
+        </form>
+        </div>
+</div>
+
